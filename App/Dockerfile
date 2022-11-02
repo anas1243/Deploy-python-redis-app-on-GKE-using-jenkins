@@ -8,5 +8,5 @@ ENV PORT=8000
 ENV REDIS_PORT=6379
 ENV REDIS_DB=0
 RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+RUN pip install -r App/requirements.txt
 CMD ["python", "hello.py"] 
