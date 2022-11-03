@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: python-app
-          image: gcr.io/red-forklift-366019/python-redis-webapp
+          image: anas1243/python-redis-app
           ports:
             - containerPort: 8000
           env:
