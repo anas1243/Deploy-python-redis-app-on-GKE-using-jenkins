@@ -36,6 +36,22 @@ This Project aimed to Deploy A containerized python-Redis web application on A G
 
 - ![Docker Credintials`](images/docker-cred.png)
 
-3. Configured A Pipeline with a remote Jenkinsfile
+3. Configured A Pipeline with a remote `Jenkinsfile`
 
 - ![PipeLine Configurations`](images/pipeline-config.png)
+
+4. Run The Pipeline
+
+- ![Run The Pipeline`](images/pipeline-run.png)
+
+5. Got External `Application loadbalancer IP` from another `namespace`
+
+- ![Run The Pipeline`](images/loadbalancer-ip.png)
+
+6. Hit The Python-Redis Web Application
+
+- ![Run The Pipeline`](images/app-hitting.png)
+
+### Notice: The Following Repo Containing The Jenkins Deployment on the private GKE cluster
+
+Repo: https://github.com/anas1243/provision-GKE-private-cluster-and-jenkins-deployment-using-terraform
