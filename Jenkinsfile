@@ -3,10 +3,11 @@ pipeline {
 
     stages {
         stage('Checkout Code') {
+            steps{
             checkout([$class: 'GitSCM',
             branches: [[name: '*/main']],
             userRemoteConfigs: [[url: 'https://github.com/anas1243/Deploy-python-redis-app-on-GKE-using-jenkins']]])
-                    
+        }
         }
         stage('Dockerize The Web App') {
             environment {
