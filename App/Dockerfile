@@ -9,4 +9,4 @@ ENV REDIS_PORT=6379
 ENV REDIS_DB=0
 RUN pip install --upgrade pip
 RUN pip install -r App/requirements.txt
-CMD ["python", "hello.py"] 
+CMD ["python", "App/hello.py"] 

@@ -21,6 +21,15 @@ pipeline {
                     
             }
         }
+        stage('Deploy The Web App') {
+        
+            steps {
+                
+                sh "kubectl create ns prod"
+                sh "kubectl apply -f Kubernetes/webApplication --recursive -n prod"
+                    
+            }
+        }
     }
     post {
         success {
